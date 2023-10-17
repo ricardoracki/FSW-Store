@@ -51,11 +51,11 @@ function Header() {
                 </Avatar>
                 <div className="flex flex-col">
                   <p className="font-medium">{data.user.name}</p>
-                  <p className="text-sm opacity-75">Boas compras</p>
+                  <p className="text-xs opacity-75">Boas compras</p>
                 </div>
               </div>
             )}
-            <Separator />
+            <Separator className="h-[1px] bg-muted" />
           </div>
 
           <div className="mt-2 flex flex-col gap-3">
