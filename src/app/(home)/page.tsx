@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Categories from "./components/categories";
 import ProductList from "./components/product-list";
 import SectionTitle from "./components/section-title";
@@ -30,7 +29,7 @@ export default async function Home() {
   });
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 py-8">
       <PromoBanner src="/banner (1).png" alt="Ate 55% de desconto" />
 
       <div className="px-5">
