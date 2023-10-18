@@ -10,7 +10,7 @@ interface Props {
 
 const ProductItem = ({ product }: Props) => {
   return (
-    <div className="flex max-w-[156px] flex-col gap-4">
+    <div className="flex max-w-[170px] flex-col gap-4">
       <div className="relative flex h-[170px] w-[156px] items-center justify-center rounded-lg bg-accent">
         <Image
           src={product.imageUrls[0]}
@@ -36,15 +36,15 @@ const ProductItem = ({ product }: Props) => {
             {product.discountPercentage > 0 ? (
               <>
                 <p className="font-semibold">
-                  R${product.totalPrice.toFixed(2)}
+                  R$ {product.totalPrice.toFixed(2)}
                 </p>
-                <p className="text-xs line-through opacity-75">
+                <p className="overflow-hidden text-ellipsis whitespace-nowrap text-xs line-through opacity-75">
                   R${Number(product.basePrice).toFixed(2)}
                 </p>
               </>
             ) : (
               <p className="text-sm font-semibold">
-                R${product.basePrice.toFixed(2)}
+                R$ {product.basePrice.toFixed(2)}
               </p>
             )}
           </div>
